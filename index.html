@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to IT Student Hub, your go-to place for IT resources, courses, and projects.">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .container div {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 1em 0;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: blueviolet;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color:rgb(189, 4, 189);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to IT Student Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home Section</h2>
+        <p>This is your go-to place for all things IT. Whether you're just starting out or looking to advance your skills, we have resources, courses, and projects to help you succeed in your IT journey.</p>
+        <img src="IMG-20240601-WA0015.jpg" alt="IT Hub Image">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a community of IT students passionate about technology and innovation. Our goal is to provide a supportive environment where students can learn, share, and grow together. From coding bootcamps to tech talks, we offer a variety of events and resources to help you thrive in the IT field.</p>
+        <img src="https://img.freepik.com/premium-photo/global-internet-connection-concept-man-s-hand-holding-virtual-internet-metaverse-business-technology-digital-marketing-financial-banking-solutions_143683-13346.jpg" alt="About Us Image">
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="container">
+            <div>
+                <h3>Service 1</h3>
+                <p>Learn the basics of programming with our beginner-friendly course. No prior experience required.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <img src="https://png.pngitem.com/pimgs/s/616-6164295_programming-language-logos-png-transparent-png.png" alt="Programming Languages">
+            <div>
+                <h3>Service 2</h3>
+                <p>Build dynamic and responsive websites using HTML, CSS, and JavaScript. Perfect for those interested in front-end development.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <img src="https://img.freepik.com/free-vector/creative-gradient-code-logo_23-2148820572.jpg?size=338&ext=jpg&ga=GA1.1.1518270500.1717200000&semt=ais_user" alt="Web Development">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Student Projects</h2>
+        <div class="container">
+            <div>
+                <h3>Project 1: Personal Portfolio</h3>
+                <p>Showcase your skills and projects with a personal portfolio website. Learn how to create a professional and engaging online presence.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <img src="IMG-20240601-WA0019.jpg" alt="Personal Portfolio">
+            <div>
+                <h3>Project 2: E-commerce Site</h3>
+                <p>Develop a fully functional e-commerce website. Gain hands-on experience with web development.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtn_JdqIlfKpK2euFq7BWpiJyzSZVogPu34sOmFNM9Aws3zXZ8izYBmb4XTI7M8Kkva2o&usqp=CAU" alt="E-commerce Site">
+            <div>
+                <h3>Project 3: Data Analysis Project</h3>
+                <p>Analyze real-world data sets and present your findings. This project helps you apply your data science knowledge in practical scenarios.</p>
+                <a href="#" class="button">View Project</a>
+            </div>
+            <img src="IMG-20240601-WA0017.jpg" alt="Data Analysis Project">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Have questions or need more information? Contact us at supriyabharane5@gmail.com or fill out the form below.</p>
+        <form action="mailto:supriyabharane5@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="button">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IT Student Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
